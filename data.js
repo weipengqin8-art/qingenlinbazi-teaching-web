@@ -1,7 +1,7 @@
 const courseData = {
   "morning": {
     "title": "3月15日上午",
-    "subtitle": "八字起源、命理学发展、阴阳、五行",
+    "subtitle": "八字起源、命理学发展、阴阳五行",
     "content": [
       {
         "title": "一、八字起源与理论基础",
@@ -139,11 +139,6 @@ const courseData = {
         ]
       }
     ]
-  },
-  "march16-morning": {
-    "title": "3月16日上午",
-    "subtitle": "十天干性格",
-    "content": []
   }
 };
 
@@ -402,7 +397,7 @@ const quizData = [
   }
 ];
 
-// 同时支持网页和小程序
+// 同时支持网页版（浏览器）和小程序（Node.js）
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = {
     courseData,
