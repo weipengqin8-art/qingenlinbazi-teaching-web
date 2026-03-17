@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>题目练习 - 秦根霖命理教学</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <button class="back-btn" onclick="goBack()">← 返回</button>
+      <div class="page-title">题目练习</div>
+    </div>
+
+    <div class="quiz-progress" id="quiz-progress">
+      <div class="progress-bar" id="progress-bar"></div>
+      <div class="progress-text" id="progress-text">第 1 题 / 共 0 题</div>
+    </div>
+
+    <div class="content" id="quiz-content"></div>
+
+    <div class="bottom-bar" id="quiz-bottom-bar">
+      <button class="btn-primary" id="next-btn" onclick="nextQuestion()">下一题 →</button>
+    </div>
+  </div>
+
+  <!-- 结果弹窗 -->
+  <div id="result-modal" class="modal">
+    <div class="modal-content">
+      <div class="result-icon" id="result-icon">🎉</div>
+      <div class="result-title" id="result-title">练习完成！</div>
+      <div class="result-score" id="result-score">0 / 0</div>
+      <div class="result-desc" id="result-desc">继续加油！</div>
+      <div class="btn-group">
+        <button class="btn-secondary" onclick="restartQuiz()">重新练习</button>
+        <button class="btn-primary" onclick="goHome()">返回首页</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="quiz.js"></script>
+</body>
+</html>

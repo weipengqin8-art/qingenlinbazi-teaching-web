@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>秦根霖命理教学</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="welcome-card">
+        <div class="title">📚 秦根霖命理教学</div>
+        <div class="subtitle">探索天地阴阳，领悟五行造化</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="section-title">课程列表</div>
+      <div id="course-list" class="course-list"></div>
+
+      <div class="quiz-section">
+        <div class="section-title">巩固练习</div>
+        <div class="quiz-card" onclick="goToQuiz()">
+          <div class="quiz-icon">📝</div>
+          <div class="quiz-info">
+            <div class="quiz-title">题目练习</div>
+            <div class="quiz-desc" id="quiz-count">道选择题，检验学习成果</div>
+          </div>
+          <div class="arrow">›</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
