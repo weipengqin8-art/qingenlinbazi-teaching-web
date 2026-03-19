@@ -126,7 +126,7 @@ const quizData = [
     ],
     "answer": 1,
     "explanation": "八字命理理论来源于古人对天文星象的观察，通过北斗七星斗柄指向来判断四季变化。",
-    "difficulty": "beginner"
+    "difficulty": "basic"
   },
   {
     "id": 2,

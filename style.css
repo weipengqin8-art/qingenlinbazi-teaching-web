@@ -446,3 +446,384 @@ body {
 .modal .btn-primary {
   flex: 1;
 }
+
+/* 错题本样式 */
+.page-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.page-header h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* 错题统计 */
+.wrong-stats {
+  padding: 20px;
+}
+
+.wrong-stats .stats-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.wrong-stats .stats-item {
+  flex: 1;
+  text-align: center;
+}
+
+.wrong-stats .stats-number {
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 4px;
+}
+
+.wrong-stats .stats-label {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.wrong-stats .stats-divider {
+  width: 2px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.wrong-stats .action-bar {
+  display: flex;
+  gap: 12px;
+}
+
+.wrong-stats .btn {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.wrong-stats .btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.wrong-stats .btn-secondary {
+  background: #e0e0e0;
+  color: #333;
+}
+
+.wrong-stats .btn:hover {
+  transform: translateY(-2px);
+}
+
+/* 空状态 */
+.empty-state {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.empty-state .empty-icon {
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+
+.empty-state .empty-text {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.empty-state .empty-desc {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.empty-state .btn {
+  padding: 12px 32px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.empty-state .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+/* 错题列表 */
+.wrong-list {
+  padding: 0 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.wrong-item {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.wrong-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.wrong-badge {
+  background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%);
+  padding: 4px 12px;
+  border-radius: 12px;
+}
+
+.wrong-badge .badge-text {
+  font-size: 12px;
+  font-weight: 600;
+  color: #d32f2f;
+}
+
+.wrong-meta {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.wrong-count {
+  font-size: 12px;
+  color: #ff5722;
+  font-weight: 600;
+}
+
+.wrong-time {
+  font-size: 12px;
+  color: #999;
+}
+
+.wrong-question {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.wrong-answer {
+  font-size: 14px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.wrong-answer .answer-label {
+  color: #666;
+  margin-right: 8px;
+}
+
+.wrong-answer .answer-wrong {
+  color: #d32f2f;
+  font-weight: 600;
+  text-decoration: line-through;
+}
+
+.wrong-answer .answer-correct {
+  color: #388e3c;
+  font-weight: 600;
+}
+
+.wrong-footer {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #f0f0f0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.wrong-footer .btn-sm {
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.wrong-footer .btn-remove {
+  background: #ffebee;
+  color: #d32f2f;
+}
+
+.wrong-footer .btn-remove:hover {
+  background: #ffcdd2;
+}
+
+/* 练习模态框 */
+.quiz-modal {
+  max-width: 500px;
+}
+
+.quiz-modal h3 {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.quiz-modal .close {
+  top: 15px;
+  right: 20px;
+}
+
+/* 练习进度 */
+.practice-progress {
+  margin-bottom: 20px;
+}
+
+.practice-progress .progress-bar {
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.practice-progress .progress-fill {
+  height: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  transition: width 0.3s;
+}
+
+.practice-progress .progress-text {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+/* 练习题目 */
+.practice-question {
+  margin-bottom: 20px;
+}
+
+.practice-question .question-text {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.practice-question .options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.practice-question .option-item {
+  display: flex;
+  align-items: center;
+  padding: 14px;
+  background: #f5f7fa;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.practice-question .option-item:hover:not(.disabled) {
+  background: #e8eaf6;
+}
+
+.practice-question .option-item.selected {
+  border-color: #667eea;
+  background: #e8eaf6;
+}
+
+.practice-question .option-item.correct {
+  border-color: #388e3c;
+  background: #e8f5e9;
+}
+
+.practice-question .option-item.wrong {
+  border-color: #d32f2f;
+  background: #ffebee;
+}
+
+.practice-question .option-item.disabled {
+  cursor: not-allowed;
+}
+
+.practice-question .option-letter {
+  width: 36px;
+  height: 36px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.practice-question .option-text {
+  flex: 1;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* 练习结果 */
+.practice-result {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.practice-result .result-icon {
+  font-size: 64px;
+  margin-bottom: 16px;
+}
+
+.practice-result .result-score {
+  font-size: 48px;
+  font-weight: bold;
+  color: #667eea;
+  margin-bottom: 12px;
+}
+
+.practice-result .result-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.practice-result .result-desc {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 24px;
+}

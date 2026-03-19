@@ -64,6 +64,14 @@ function selectOption(index) {
 
   if (isCorrect) {
     score++;
+  } else {
+    // 保存错题
+    addWrongQuestion({
+      questionId: quiz.id,
+      question: quiz.question,
+      userAnswer: index,
+      correctAnswer: quiz.answer
+    });
   }
 
   // 标记选项状态
@@ -87,6 +95,13 @@ function selectOption(index) {
 
   // 启用下一题按钮
   document.getElementById('next-btn').disabled = false;
+
+  // 如果做对了，1秒后自动跳转到下一题
+  if (isCorrect) {
+    setTimeout(() => {
+      nextQuestion();
+    }, 1000);
+  }
 }
 
 // 下一题

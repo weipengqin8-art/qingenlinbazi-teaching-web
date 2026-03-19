@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>错题本 - 秦根霖命理教学</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="page-header">
+      <button class="back-btn" onclick="goHome()">← 返回</button>
+      <h1>❌ 错题本</h1>
+    </header>
+
+    <!-- 头部统计 -->
+    <div id="wrong-stats" class="wrong-stats" style="display: none;">
+      <div class="stats-card">
+        <div class="stats-item">
+          <div class="stats-number" id="wrong-count-num">0</div>
+          <div class="stats-label">道错题</div>
+        </div>
+        <div class="stats-divider"></div>
+        <div class="stats-item">
+          <div class="stats-number" id="wrong-total-count">0</div>
+          <div class="stats-label">总错误次数</div>
+        </div>
+      </div>
+      <div class="action-bar">
+        <button class="btn btn-primary" onclick="startPractice()">🎯 练习错题</button>
+        <button class="btn btn-secondary" onclick="clearAll()">🗑️ 清空</button>
+      </div>
+    </div>
+
+    <!-- 空状态 -->
+    <div id="empty-state" class="empty-state">
+      <div class="empty-icon">✨</div>
+      <div class="empty-text">太棒了！没有错题</div>
+      <div class="empty-desc">继续保持，加油！</div>
+      <button class="btn btn-primary" onclick="goToQuiz()">去做题</button>
+    </div>
+
+    <!-- 错题列表 -->
+    <div id="wrong-list" class="wrong-list"></div>
+  </div>
+
+  <!-- 练习模态框 -->
+  <div id="practice-modal" class="modal">
+    <div class="modal-content quiz-modal">
+      <span class="close" onclick="closePractice()">&times;</span>
+      <h3>错题练习</h3>
+      
+      <!-- 练习进度 -->
+      <div id="practice-progress" class="practice-progress" style="display: none;">
+        <div class="progress-bar">
+          <div class="progress-fill" id="progress-fill"></div>
+        </div>
+        <div class="progress-text" id="progress-text"></div>
+      </div>
+
+      <!-- 练习题目 -->
+      <div id="practice-question" class="practice-question" style="display: none;">
+        <div class="question-text" id="practice-question-text"></div>
+        <div class="options-list" id="practice-options-list"></div>
+        <!-- 解析 -->
+        <div id="practice-explanation" class="explanation" style="display: none;">
+          <div class="explanation-title">📝 解析</div>
+          <div class="explanation-text" id="practice-explanation-text"></div>
+        </div>
+      </div>
+
+      <!-- 练习结果 -->
+      <div id="practice-result" class="practice-result" style="display: none;">
+        <div class="result-icon" id="result-icon">💪</div>
+        <div class="result-score" id="result-score"></div>
+        <div class="result-title" id="result-title"></div>
+        <div class="result-desc" id="result-desc"></div>
+      </div>
+
+      <!-- 练习按钮 -->
+      <div class="btn-group">
+        <button class="btn btn-primary" id="start-practice-btn" onclick="startPracticeQuiz()">开始练习</button>
+        <button class="btn btn-primary" id="next-practice-btn" style="display: none;" onclick="nextPracticeQuestion()">下一题 →</button>
+        <button class="btn btn-secondary" id="restart-practice-btn" style="display: none;" onclick="restartPractice()">重新练习</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="wrong-questions.js"></script>
+</body>
+</html>

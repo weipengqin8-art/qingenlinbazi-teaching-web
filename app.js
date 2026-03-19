@@ -2,6 +2,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   renderCourseList();
   updateQuizCount();
+  updateWrongCount();
 });
 
 // 渲染课程列表
@@ -37,7 +38,25 @@ function goToCourse(courseKey) {
   window.location.href = 'course.html';
 }
 
+// 更新错题数量
+function updateWrongCount() {
+  try {
+    const wrongQuestions = JSON.parse(localStorage.getItem('bazi_wrong_questions') || '[]');
+    const wrongCountEl = document.getElementById('wrong-count');
+    if (wrongCountEl) {
+      wrongCountEl.textContent = `${wrongQuestions.length}道错题，查看和练习`;
+    }
+  } catch (e) {
+    console.error('读取错题数量失败:', e);
+  }
+}
+
 // 跳转到题目练习页
 function goToQuiz() {
   window.location.href = 'quiz.html';
+}
+
+// 跳转到错题本
+function goToWrongQuestions() {
+  window.location.href = 'wrong-questions.html';
 }
