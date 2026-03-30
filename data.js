@@ -114,7 +114,7 @@ const courseData = {
   },
   "march21-morning": {
     "title": "3月21日上午",
-    "subtitle": "10天干性格、物象与环境健康",
+    "subtitle": "十天干性格、物象与环境健康",
     "content": [
       {
         "title": "一、十天干性格特点",
