@@ -1252,6 +1252,266 @@ const quizData = [
     "answer": 1,
     "explanation": "严重疾病信号：土金都出现问题（土金相生）、木火都出现问题（木火相生）、两个相生五行同时失调、土很弱又很坏（注意结节、肿瘤）。",
     "difficulty": "basic"
+  },
+  {
+    "id": 41,
+    "question": "天干相合中，甲己合化什么？",
+    "options": [
+      "金",
+      "木",
+      "水",
+      "土"
+    ],
+    "answer": 3,
+    "explanation": "甲己合化土，是中正之合，诚信可靠。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 42,
+    "question": "天干相合中，乙庚合化什么？",
+    "options": [
+      "金",
+      "木",
+      "水",
+      "火"
+    ],
+    "answer": 0,
+    "explanation": "乙庚合化金，是仁义之合，刚柔相济。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 43,
+    "question": "天干相合中，丙辛合化什么？",
+    "options": [
+      "金",
+      "木",
+      "水",
+      "火"
+    ],
+    "answer": 2,
+    "explanation": "丙辛合化水，是威严之合，严厉果断。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 44,
+    "question": "什么是贪合忘生？",
+    "options": [
+      "因相合而导致主生者不去生其他五行",
+      "因相合而导致行克者不去克其他五行",
+      "相合后能量发生转变，化为另一种五行",
+      "一个天干同时与两个天干发生相合关系"
+    ],
+    "answer": 0,
+    "explanation": "贪合忘生：因相合而导致主生者不去生其他五行。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 45,
+    "question": "什么是贪合忘克？",
+    "options": [
+      "因相合而导致主生者不去生其他五行",
+      "因相合而导致行克者不去克其他五行",
+      "相合后能量发生转变，化为另一种五行",
+      "一个天干同时与两个天干发生相合关系"
+    ],
+    "answer": 1,
+    "explanation": "贪合忘克：因相合而导致行克者不去克其他五行。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 46,
+    "question": "天干相冲中，甲庚相冲属于什么？",
+    "options": [
+      "阴木与阴金相冲",
+      "阳木与阳金相冲",
+      "阳火与阳水相冲",
+      "阴火与阴水相冲"
+    ],
+    "answer": 1,
+    "explanation": "甲庚相冲：阳木与阳金相冲。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 47,
+    "question": "天干相冲中，乙辛相冲属于什么？",
+    "options": [
+      "阴木与阴金相冲",
+      "阳木与阳金相冲",
+      "阳火与阳水相冲",
+      "阴火与阴水相冲"
+    ],
+    "answer": 0,
+    "explanation": "乙辛相冲：阴木与阴金相冲。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 48,
+    "question": "什么是天干争合？",
+    "options": [
+      "一个天干同时与两个天干发生相合关系",
+      "两个天干想要相合，但被旁边的天干冲克所影响",
+      "因相合而导致主生者不去生其他五行",
+      "相合后能量发生转变，化为另一种五行"
+    ],
+    "answer": 0,
+    "explanation": "争合：一个天干同时与两个天干发生相合关系，称为争合。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 49,
+    "question": "什么是天干妒合？",
+    "options": [
+      "一个天干同时与两个天干发生相合关系",
+      "两个天干想要相合，但被旁边的天干冲克所影响",
+      "因相合而导致主生者不去生其他五行",
+      "相合后能量发生转变，化为另一种五行"
+    ],
+    "answer": 1,
+    "explanation": "妒合：两个天干想要相合，但被旁边的天干冲克所影响，称为妒合。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 50,
+    "question": "若一个天干同时有合有冲，应该先论什么？",
+    "options": [
+      "先论冲，后论合",
+      "先论合，后论冲",
+      "同时论",
+      "都不论"
+    ],
+    "answer": 1,
+    "explanation": "贪合忘克：若一个天干同时有合有冲，先论合，后论冲。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 51,
+    "question": "地支三会局中，力量最大的是？",
+    "options": [
+      "三合局",
+      "六合",
+      "三会局",
+      "六冲"
+    ],
+    "answer": 2,
+    "explanation": "三会局是指三个地支凑在一起，形成一个季节的气场，在地支作用关系中力量最大。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 52,
+    "question": "寅卯辰三会什么？",
+    "options": [
+      "南方火",
+      "西方金",
+      "东方木",
+      "北方水"
+    ],
+    "answer": 2,
+    "explanation": "寅卯辰三会东方木：春季木旺。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 53,
+    "question": "巳午未三会什么？",
+    "options": [
+      "南方火",
+      "西方金",
+      "东方木",
+      "北方水"
+    ],
+    "answer": 0,
+    "explanation": "巳午未三会南方火：夏季火旺。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 54,
+    "question": "申子辰三合什么？",
+    "options": [
+      "木局",
+      "火局",
+      "金局",
+      "水局"
+    ],
+    "answer": 3,
+    "explanation": "申子辰三合水局：中神为子。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 55,
+    "question": "亥卯未三合什么？",
+    "options": [
+      "木局",
+      "火局",
+      "金局",
+      "水局"
+    ],
+    "answer": 0,
+    "explanation": "亥卯未三合木局：中神为卯。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 56,
+    "question": "子丑合化什么？",
+    "options": [
+      "木",
+      "火",
+      "金",
+      "土"
+    ],
+    "answer": 3,
+    "explanation": "子丑合化土：克合，不平等之合。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 57,
+    "question": "寅亥合化什么？",
+    "options": [
+      "木",
+      "火",
+      "金",
+      "水"
+    ],
+    "answer": 0,
+    "explanation": "寅亥合化木：合生，旗鼓相当。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 58,
+    "question": "子午相冲会导致什么？",
+    "options": [
+      "事业阻逆",
+      "一生不安",
+      "好管闲事",
+      "色情纠纷"
+    ],
+    "answer": 1,
+    "explanation": "子午相冲：一生不安。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 59,
+    "question": "作用关系优先级中，第一优先级是？",
+    "options": [
+      "三合局",
+      "六合",
+      "三会局",
+      "六冲"
+    ],
+    "answer": 2,
+    "explanation": "第一优先级：三会局（力量最大）。",
+    "difficulty": "basic"
+  },
+  {
+    "id": 60,
+    "question": "冲走什么是好事？",
+    "options": [
+      "冲走喜用",
+      "冲走忌神",
+      "冲走任何字",
+      "冲走都不是好事"
+    ],
+    "answer": 1,
+    "explanation": "冲走忌神是好事，冲走喜用是灾祸。",
+    "difficulty": "basic"
   }
 ];
 
